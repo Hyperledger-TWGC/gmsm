@@ -85,7 +85,7 @@ func clientRun() {
 	creds := NewTLS(&gmtls.Config{
 		GMSupport:    &gmtls.GMSupport{},
 		ServerName:   "test.example.com",
-		Certificates: []gmtls.Certificate{cert},
+		Certificates: []gmtls.Certificate{cert,cert},
 		RootCAs:      certPool,
 		ClientAuth:   gmtls.RequireAndVerifyClientCert,
 	})
