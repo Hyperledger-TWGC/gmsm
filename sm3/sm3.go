@@ -3,7 +3,8 @@
 package sm3
 
 import "hash"
-
+const Size = 32
+const BlockSize = 64
 type SM3 struct{
 	digest      [8]uint32 // digest represents the partial evaluation of V
 	length      uint64    // length of the message
