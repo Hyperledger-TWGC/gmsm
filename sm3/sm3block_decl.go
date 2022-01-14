@@ -1,3 +1,5 @@
+// +build amd64,386
+
 package sm3
 
 import (
